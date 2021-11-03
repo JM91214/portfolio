@@ -2,7 +2,7 @@ body{ display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: 
 
 
 
-ul a { font-family: nimbus-sans, sans-serif; font-weight: 400; font-style: normal; font-size: 5vw; line-height: 1vh;  }
+ul a { font-family: nimbus-sans, sans-serif; font-weight: 400; font-style: normal; font-size: 30pt; line-height: 1vh;  }
 header{position: fixed; grid-row: 1; grid-column: 1; }
 img { width: 100%; padding-bottom: .2em; margin: auto; padding-top: 1em;}
 main { grid-column: 3 / span 4; }
@@ -11,7 +11,7 @@ a, a:after{text-decoration: none; color: black;}
 ul {padding: 0;}
 
 
-header ul:hover { text-decoration: underline; color: grey; -moz-transition: all .05s ease-in-out;
+a:hover { text-decoration: underline; color: grey; -moz-transition: all .05s ease-in-out;
 	    -webkit-transition: all .05s ease-in-out;
 	    -o-transition: all .05s ease-in-out;
 	    -ms-transition: all .05s ease-in-out;
@@ -24,3 +24,8 @@ img { display: block; border-radius: .5%;}
 .first-image{ padding-top: 0; }
 body{margin: 20pt; padding: 0;}
 img{ border-radius: 1%; }
+
+
+@media all and (max-width: 800px) {
+header{ grid-row: 1; grid-column: 2; }
+ul a {  font-size: 18pt; line-height: 9pt;  }
