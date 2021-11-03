@@ -18,7 +18,7 @@ header ul:hover { text-decoration: underline; color: grey; -moz-transition: all 
 	    transition: all .05s ease-in-out;}
 
 p { font-family: nimbus-sans, sans-serif; font-weight: 400; font-style: normal; font-size: 3vw;  }
-h1 {font-family: franklin-gothic-atf,sans-serif; font-weight: 600; font-style: normal; font-size: 3vw;  }
+h1 {font-family: franklin-gothic-atf,sans-serif; font-weight: 600; font-style: normal; font-size: 3vw; text-transform: uppercase;  }
 h2 { font-family: franklin-gothic-atf,sans-serif; font-weight: 600; font-style: normal; font-size: 2em;}
 img { display: block; border-radius: .5%;}
 .first-image{ padding-top: 0; }
