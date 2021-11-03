@@ -2,11 +2,13 @@ body{ display: grid; grid-template-columns: repeat(10, 1fr); grid-template-rows:
 
 
 
-ul a { font-family: nimbus-sans, sans-serif; font-weight: 400; font-style: normal; font-size: 5vw; line-height: 1vh;  }
+ul a { font-family: nimbus-sans, sans-serif; font-weight: 400; font-style: normal; font-size: 30pt; line-height: 1vh;  }
 header{position: fixed; grid-row: 1; grid-column: 2; }
 img { width: 100%; padding-bottom: .2em; margin: auto; padding-top: 1em;}
-main { grid-column: 5 / span 5; }
-.intro{ grid-column: 4 / span 7; grid-row: 1; font-family: franklin-gothic-atf,sans-serif; font-weight: 600; font-style: normal;  font-size: 3vw; line-height: 3vw; padding-bottom: .5em; margin: 10px;  align-self: end;
+main { grid-column: 4 / span 7; }
+.intro{ grid-column: 4 / span 7; grid-row: 1; font-family: franklin-gothic-atf,sans-serif; 
+	font-weight: 600; font-style: normal; font-size: 42pt; line-height: 40vw; /*font-size: 3vw; line-height: 3vw;*/
+	padding-bottom: .5em; margin: 10px;  align-self: end;
 }
 
 a, a:after{text-decoration: none; color: black;}
@@ -36,3 +38,9 @@ a:hover { text-decoration: underline; color: grey; -moz-transition: all .05s eas
 	    -o-transition: all .05s ease-in-out;
 	    -ms-transition: all .05s ease-in-out;
 	    transition: all .05s ease-in-out;}
+
+@media all and (max-width: 800px) {
+header{position: absolute; grid-row: 1; grid-column: 2; }
+.intro{ grid-column: 1 / span 10; grid-row: 1; font-size: 3.8vh; line-height: 4.5vh; padding-left: 0; margin-left: 0;}
+.archive-link{ grid-column: 1 / span 10; grid-row: 1; font-size: 3.8vh; line-height: 4.5vh;}
+main{ grid-column: 1 / span 10; }
