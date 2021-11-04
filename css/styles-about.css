@@ -3,7 +3,7 @@ body{ display: grid; grid-template-columns: repeat(10, 1fr); grid-template-rows:
 
 
 ul a { font-family: nimbus-sans, sans-serif; font-weight: 400; font-style: normal; font-size: 30pt; line-height: 1vh;  }
-header{position: fixed; grid-row: 1; grid-column: 2; }
+header{position: fixed; grid-row: 1; grid-column: 2; width: 230px; }
 img { width: 100%; padding-bottom: .2em; margin: auto; padding-top: 1em;}
 main { grid-column: 4 / span 7; }
 .intro{ grid-column: 4 / span 7; grid-row: 1; font-family: franklin-gothic-atf,sans-serif; 
