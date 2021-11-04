@@ -17,18 +17,19 @@
 
 	/** Assigning character styles - Mobile First*/
 
-		p { font-family: nimbus-sans, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; }
+		p { font-family: nimbus-sans, sans-serif; font-weight: 400; font-style: normal; font-size: 18px; }
 		h1 {font-family: franklin-gothic-atf,sans-serif; font-weight: 600; font-style: normal; font-size: 2em;  }
 		h2 { font-family: franklin-gothic-atf,sans-serif; font-weight: 600; font-style: normal; font-size: 2em;}
 		img { display: block; border-radius: 1%;}
 		.intro-home{ margin-top:  2vh; margin-bottom: 7vh;}
 
 
-		header { display: block;  padding: 5vw 5vw 0; margin: 0 auto; width: 600px;}
+		header { display: block;  padding: 3vw 3vw 0; width: auto; }
+	
 
 
 	/** Setting up the main grid*/
-		main { display: grid; grid-template-columns: repeat(4, 1fr); grid-column-gap: em;  grid-template-rows: 5; padding: 3vw 3vw 0; width: 600px; margin: 0 auto; padding-top: 0;}
+		main { display: grid; grid-template-columns: repeat(4, 1fr); grid-column-gap: em;  grid-template-rows: 5; padding: 3vw 3vw 0; width: 90vw; margin: 0 auto; padding-top: 0;}
 
 
 
@@ -52,17 +53,34 @@
 
 
 	@media all and (min-width: 600px) {
-	a:hover{ color: gray;     -moz-transition: all .1s ease-in-out;
-    -webkit-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    -ms-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;}
+		a:hover { text-decoration: underline; color: grey; -moz-transition: all .05s ease-in-out;
+	    -webkit-transition: all .05s ease-in-out;
+	    -o-transition: all .05s ease-in-out;
+	    -ms-transition: all .05s ease-in-out;
+	    transition: all .05s ease-in-out;}
 
     img:hover{ opacity: .8;     -moz-transition: all .1s ease-in-out;
     -webkit-transition: all .15s ease-in-out;
     -o-transition: all .15s ease-in-out;
     -ms-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;}
+
+	}
+
+
+    @media all and (min-width: 1000px) {
+ 		p{ font-size:20px; padding-bottom: 10vh; padding-top: 5vh;}
+ 	}
+ 	  @media all and (min-width: 1200px) {
+ 		p{ font-size:25px; }
+ 	}
+
+ 	@media all and (max-width: 700px) {
+ 		.intro>p{ grid-column: 1 / span 3 }}
+
+
+
+
  		/*p{ font-size:18px; }
  		h1, h2 {font-size: 24px;}
 
